@@ -1,0 +1,15 @@
+/*rgfrole_1 => RGFRole (v1)*/
+div.rg-details.rgfrole_1 { width: 634px; }
+div.rg-details.rgfrole_1 div.ui-dialog-content div.rg-tabs { height: 547px; }
+/*rg-col-11730 => RoleId:*/
+.rgfrole_1 div.rg-property[name="rg-col-11730"] .rg-label { text-align: center; min-width: 80px; }
+.rgfrole_1 div.rg-property[name="rg-col-11730"] .rg-cru { width: 300px; }
+/*rg-col-11731 => RoleName:*/
+.rgfrole_1 div.rg-property[name="rg-col-11731"] .rg-label { text-align: center; min-width: 80px; }
+.rgfrole_1 div.rg-property[name="rg-col-11731"] .rg-cru { width: 300px; }
+/*rg-col-11732 => RoleScope:*/
+.rgfrole_1 div.rg-property[name="rg-col-11732"] .rg-label { text-align: center; min-width: 80px; }
+.rgfrole_1 div.rg-property[name="rg-col-11732"] .rg-cru { width: 300px; }
+/*rg-col-11733 => Source:*/
+.rgfrole_1 div.rg-property[name="rg-col-11733"] .rg-label { text-align: center; min-width: 80px; }
+/*rg-col-11734 => RGFUserRole (v1)*/

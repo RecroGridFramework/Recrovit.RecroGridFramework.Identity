@@ -1,0 +1,37 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Menu, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "MenuId": 200,
+      "MenuType": 3,
+      "ParentId": 100,
+      "Title": "RGF Identity",
+      "Command": "",
+      "MenuPos": 65,
+      "AlwayVisible": true,
+      "Scope": ";identity;"
+    },
+    {
+      "MenuId": 201,
+      "MenuType": 6,
+      "EntityName": "RGFUser_1",
+      "ParentId": 200,
+      "Title": "Users",
+      "Command": "/Auth/Users",
+      "MenuPos": 1,
+      "AlwayVisible": true,
+      "Scope": ";identity;"
+    },
+    {
+      "MenuId": 202,
+      "MenuType": 6,
+      "EntityName": "RGFRole_1",
+      "ParentId": 200,
+      "Title": "Roles",
+      "Command": "/Auth/Roles",
+      "MenuPos": 2,
+      "AlwayVisible": true,
+      "Scope": ";identity;"
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "TypeDef": "Recrovit.RecroGridFramework.CF_RecroGrid_Entity, Recrovit.RecroGrid",
+  "Data": [
+    {
+      "EntityId": 10054,
+      "EntityName": "RGFUser",
+      "EntityVersion": "1",
+      "TypeDefinition": "Recrovit.RecroGridFramework.RecroGridDBC`1, Recrovit.RecroGrid,Recrovit.RecroGridFramework.Identity.Models.RGFUser, Recrovit.RecroGridFramework.Identity",
+      "Category": 1,
+      "Title": "RGF Identity - Users",
+      "EntityComment": "RGF.Identity",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 11720,
+          "EntityId": 10054,
+          "ColName": "UserId",
+          "ColTitle": "UserId",
+          "ColPos": 1,
+          "ColWidth": 147,
+          "ListType": 0,
+          "IsKey": true,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 1
+        },
+        {
+          "PropertyId": 11721,
+          "EntityId": 10054,
+          "ColName": "Language",
+          "ColPos": 3,
+          "ColWidth": 0,
+          "ListType": 0,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 3
+        },
+        {
+          "PropertyId": 11722,
+          "EntityId": 10054,
+          "ColName": "UserName",
+          "ColTitle": "UserName",
+          "ColPos": 2,
+          "ColWidth": 263,
+          "ListType": 0,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 2
+        },
+        {
+          "PropertyId": 11723,
+          "EntityId": 10054,
+          "ColName": "UserRole",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 5,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 1,
+          "FormPos": 4,
+          "EntityBase": 10055,
+          "MigrEntityBaseName": "RGFUserRole"
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "Id": 3949,
+          "EntityId": 10054,
+          "PropertyId": 11720,
+          "OptionKey": "RGO_Nullable",
+          "OptionValue": "False",
+          "IsClientParam": true
+        },
+        {
+          "Id": 3953,
+          "EntityId": 10054,
+          "PropertyId": 11720,
+          "OptionKey": "RGO_Sort",
+          "OptionValue": "1",
+          "IsClientParam": false
+        },
+        {
+          "Id": 3950,
+          "EntityId": 10054,
+          "PropertyId": 11721,
+          "OptionKey": "RGO_MaxLength",
+          "OptionValue": "3",
+          "IsClientParam": true
+        },
+        {
+          "Id": 3951,
+          "EntityId": 10054,
+          "PropertyId": 11722,
+          "OptionKey": "RGO_Nullable",
+          "OptionValue": "False",
+          "IsClientParam": true
+        },
+        {
+          "Id": 3952,
+          "EntityId": 10054,
+          "PropertyId": 11723,
+          "OptionKey": "RGO_ForeignKey",
+          "OptionValue": "UserId",
+          "IsClientParam": false
+        }
+      ]
+    },
+    {
+      "EntityId": 10055,
+      "EntityName": "RGFUserRole",
+      "EntityVersion": "1",
+      "TypeDefinition": "Recrovit.RecroGridFramework.RecroGridDBC`1, Recrovit.RecroGrid,Recrovit.RecroGridFramework.Identity.Models.RGFUserRole, Recrovit.RecroGridFramework.Identity",
+      "Category": 1,
+      "EntityComment": "RGF.Identity",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 11725,
+          "EntityId": 10055,
+          "ColName": "RoleId",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "IsKey": true,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormPos": 65535
+        },
+        {
+          "PropertyId": 11724,
+          "EntityId": 10055,
+          "ColName": "UserId",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 0,
+          "IsKey": true,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 0,
+          "FormPos": 65535
+        },
+        {
+          "PropertyId": 11726,
+          "EntityId": 10055,
+          "ColName": "Role",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 3,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "FormPos": 65535,
+          "EntityBase": 10056,
+          "MigrEntityBaseName": "RGFRole"
+        },
+        {
+          "PropertyId": 11727,
+          "EntityId": 10055,
+          "ColName": "Role.RoleName",
+          "Alias": "Role_Name",
+          "ColPos": 1,
+          "ColWidth": 283,
+          "ListType": 0,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65535,
+          "EntityBase": 10056,
+          "MigrEntityBaseName": "RGFRole"
+        },
+        {
+          "PropertyId": 11728,
+          "EntityId": 10055,
+          "ColName": "User",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 3,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": false,
+          "Editable": false,
+          "FormType": 8,
+          "FormTab": 0,
+          "FormPos": 65535,
+          "EntityBase": 10054,
+          "MigrEntityBaseName": "RGFUser"
+        },
+        {
+          "PropertyId": 11729,
+          "EntityId": 10055,
+          "ColName": "User.UserName",
+          "Alias": "User_Name",
+          "ColPos": 2,
+          "ColWidth": 214,
+          "ListType": 0,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 65535,
+          "EntityBase": 10054,
+          "MigrEntityBaseName": "RGFUser"
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "Id": 3954,
+          "EntityId": 10055,
+          "PropertyId": 11724,
+          "OptionKey": "RGO_Nullable",
+          "OptionValue": "False",
+          "IsClientParam": true
+        },
+        {
+          "Id": 3955,
+          "EntityId": 10055,
+          "PropertyId": 11725,
+          "OptionKey": "RGO_Nullable",
+          "OptionValue": "False",
+          "IsClientParam": true
+        },
+        {
+          "Id": 3956,
+          "EntityId": 10055,
+          "PropertyId": 11726,
+          "OptionKey": "RGO_ForeignKey",
+          "OptionValue": "RoleId",
+          "IsClientParam": false
+        },
+        {
+          "Id": 3957,
+          "EntityId": 10055,
+          "PropertyId": 11727,
+          "OptionKey": "RGO_Nullable",
+          "OptionValue": "False",
+          "IsClientParam": true
+        },
+        {
+          "Id": 3965,
+          "EntityId": 10055,
+          "PropertyId": 11727,
+          "OptionKey": "RGO_Sort",
+          "OptionValue": "1",
+          "IsClientParam": false
+        },
+        {
+          "Id": 3958,
+          "EntityId": 10055,
+          "PropertyId": 11728,
+          "OptionKey": "RGO_ForeignKey",
+          "OptionValue": "UserId",
+          "IsClientParam": false
+        },
+        {
+          "Id": 3959,
+          "EntityId": 10055,
+          "PropertyId": 11729,
+          "OptionKey": "RGO_Nullable",
+          "OptionValue": "False",
+          "IsClientParam": true
+        },
+        {
+          "Id": 3966,
+          "EntityId": 10055,
+          "PropertyId": 11729,
+          "OptionKey": "RGO_Sort",
+          "OptionValue": "2",
+          "IsClientParam": false
+        }
+      ]
+    },
+    {
+      "EntityId": 10056,
+      "EntityName": "RGFRole",
+      "EntityVersion": "1",
+      "TypeDefinition": "Recrovit.RecroGridFramework.RecroGridDBC`1, Recrovit.RecroGrid,Recrovit.RecroGridFramework.Identity.Models.RGFRole, Recrovit.RecroGridFramework.Identity",
+      "Category": 1,
+      "Title": "RGF Identity - Roles",
+      "EntityComment": "RGF.Identity",
+      "RecroGrid_Property": [
+        {
+          "PropertyId": 11730,
+          "EntityId": 10056,
+          "ColName": "RoleId",
+          "ColTitle": "RoleId",
+          "ColPos": 1,
+          "ColWidth": 233,
+          "ListType": 0,
+          "IsKey": true,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 1
+        },
+        {
+          "PropertyId": 11731,
+          "EntityId": 10056,
+          "ColName": "RoleName",
+          "ColTitle": "RoleName",
+          "ColPos": 2,
+          "ColWidth": 358,
+          "ListType": 0,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 2
+        },
+        {
+          "PropertyId": 11732,
+          "EntityId": 10056,
+          "ColName": "RoleScope",
+          "ColTitle": "RoleScope",
+          "ColPos": 3,
+          "ColWidth": 150,
+          "ListType": 0,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 3
+        },
+        {
+          "PropertyId": 11733,
+          "EntityId": 10056,
+          "ColName": "Source",
+          "ColPos": 3,
+          "ColWidth": 0,
+          "ListType": 0,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": true,
+          "Editable": true,
+          "FormType": 1,
+          "FormTab": 1,
+          "FormPos": 3
+        },
+        {
+          "PropertyId": 11734,
+          "EntityId": 10056,
+          "ColName": "UserRole",
+          "ColPos": 0,
+          "ColWidth": 0,
+          "ListType": 5,
+          "IsKey": false,
+          "IsDynamic": false,
+          "Readable": false,
+          "Editable": true,
+          "FormType": 7,
+          "FormTab": 1,
+          "FormPos": 4,
+          "EntityBase": 10055,
+          "MigrEntityBaseName": "RGFUserRole"
+        }
+      ],
+      "RecroGrid_Options": [
+        {
+          "Id": 3960,
+          "EntityId": 10056,
+          "PropertyId": 11730,
+          "OptionKey": "RGO_Nullable",
+          "OptionValue": "False",
+          "IsClientParam": true
+        },
+        {
+          "Id": 3964,
+          "EntityId": 10056,
+          "PropertyId": 11730,
+          "OptionKey": "RGO_Sort",
+          "OptionValue": "1",
+          "IsClientParam": false
+        },
+        {
+          "Id": 3961,
+          "EntityId": 10056,
+          "PropertyId": 11731,
+          "OptionKey": "RGO_Nullable",
+          "OptionValue": "False",
+          "IsClientParam": true
+        },
+        {
+          "Id": 3962,
+          "EntityId": 10056,
+          "PropertyId": 11732,
+          "OptionKey": "RGO_MaxLength",
+          "OptionValue": "255",
+          "IsClientParam": true
+        },
+        {
+          "Id": 3963,
+          "EntityId": 10056,
+          "PropertyId": 11733,
+          "OptionKey": "RGO_MaxLength",
+          "OptionValue": "16",
+          "IsClientParam": true
+        },
+        {
+          "Id": 3964,
+          "EntityId": 10056,
+          "PropertyId": 11734,
+          "OptionKey": "RGO_ForeignKey",
+          "OptionValue": "RoleId",
+          "IsClientParam": false
+        }
+      ]
+    }
+  ]
+}

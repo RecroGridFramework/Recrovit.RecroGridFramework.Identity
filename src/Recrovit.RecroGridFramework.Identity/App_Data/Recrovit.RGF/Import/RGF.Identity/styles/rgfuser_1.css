@@ -1,0 +1,13 @@
+/*rgfuser_1 => RGFUser (v1)*/
+div.rg-details.rgfuser_1 { width: 622px; }
+div.rg-details.rgfuser_1 div.ui-dialog-content div.rg-tabs { height: 555px; }
+/*rg-col-11720 => UserId:*/
+.rgfuser_1 div.rg-property[name="rg-col-11720"] .rg-label { text-align: center; min-width: 80px; }
+.rgfuser_1 div.rg-property[name="rg-col-11720"] .rg-cru { width: 350px; }
+/*rg-col-11722 => UserName:*/
+.rgfuser_1 div.rg-property[name="rg-col-11722"] .rg-label { text-align: center; min-width: 80px; }
+.rgfuser_1 div.rg-property[name="rg-col-11722"] .rg-cru { width: 350px; }
+/*rg-col-11721 => Language:*/
+.rgfuser_1 div.rg-property[name="rg-col-11721"] .rg-label { text-align: center; min-width: 80px; }
+.rgfuser_1 div.rg-property[name="rg-col-11721"] .rg-cru { width: 50px; }
+/*rg-col-11723 => RGFUserRole (v1)*/
